@@ -1,0 +1,196 @@
+@import "./global.scss";
+
+.container-xl {
+  .artists {
+    flex-wrap: wrap;
+    .col-12 {
+      &.cl-1 {
+        height: 90px;
+        overflow: hidden;
+        position: relative;
+        p {
+          font-family: "Audiowide";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 60px;
+          line-height: 88px;
+          text-transform: uppercase;
+          position: absolute;
+          padding: 0 !important;
+          top: 0;
+          color: white;
+          &.p-1 {
+            animation: text 5s linear infinite;
+          }
+          &.p-2 {
+            animation: text 5s linear infinite;
+            animation-delay: 1.7s;
+          }
+          &.p-3 {
+            animation: text 5s linear infinite;
+            animation-delay: 3.4s;
+          }
+        }
+      }
+      &.cl-2 {
+        margin-top: 50px !important;
+        flex-wrap: wrap;
+        display: flex;
+        width: 90%;
+        padding: 0 20px !important;
+        .col-3 {
+          height: 280px;
+          padding: 15px !important;
+          margin-bottom: 15px !important;
+          .row {
+            width: 100%;
+            &.rw-1 {
+              height: 87.5%;
+              @include flex(center, center);
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+            &.rw-2 {
+              height: 12.5%;
+              p {
+                width: 90%;
+                height: 90%;
+                margin:  auto !important;
+                margin-top: 5px !important;
+                font-family: "DM Mono";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+                color: rgb(255, 255, 255);
+                overflow: hidden;
+                padding: 0 5px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    .add-photo{
+      padding: 20px;
+      // @include m4(center, center);
+      display: none !important;
+      .icon{
+        width: 100%;
+        cursor: pointer;
+        height: 90%;
+        @include flex(center, center);
+        i{
+          font-size: 60px !important;
+          color: white;
+        }
+      }
+      .form{
+        height: 90%;
+        width: 100%;
+        @include flex(center, center);
+        flex-wrap: wrap;
+        display: none;
+        input{
+          width: 90%;
+          height: 30px;
+          padding: 0 10px !important;
+        }
+        button{
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+// ANIMATION
+@keyframes text {
+  0% {
+    left: -300px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+// RESPONSIVE
+
+// MOBILE
+@media screen and(min-width: 300px) and (max-width: 449.9px) {
+  .container-xl {
+    .artists{
+      .col-12{
+        &.cl-1{
+          p{
+            font-size: 30px !important;
+          }
+        }
+        &.cl-2{
+          width: 100% !important;
+          flex-wrap: wrap;
+          display: block !important;
+          .col-3{
+            width: 230px;
+            &:nth-of-type(even){
+              float: left !important;
+            }
+            &:nth-of-type(odd){
+              float: right !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// TABLET
+@media screen and(min-width: 450px) and (max-width: 629.9px) {
+  .container-xl {
+    .artists{
+      .col-12{
+        &.cl-1{
+          p{
+            font-size: 40px !important;
+          }
+        }
+        &.cl-2{
+          flex-wrap: wrap;
+          .col-3{
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// MINI LAPTOP
+@media screen and(min-width: 630px) and (max-width: 850px) {
+  .container-xl {
+    .artists{
+      .col-12{
+        &.cl-1{
+          p{
+            font-size: 50px !important;
+          }
+        }
+        &.cl-2{
+          flex-wrap: wrap;
+          .col-3{
+            width: 33%;
+            .rw-2{
+              p{
+                font-size: 14px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

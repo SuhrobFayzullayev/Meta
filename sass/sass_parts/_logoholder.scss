@@ -1,0 +1,99 @@
+@import "./global.scss";
+
+.logoholder {
+  margin-top: 70px !important;
+  padding: 20px 0 !important;
+  overflow: hidden;
+  position: relative;
+  z-index: 5 !important;
+  .col-12 {
+    padding: 0 !important;
+    @include flex(space-between, center);
+    &.cl-1 {
+      position: relative;
+      p {
+        position: absolute;
+        &.p-1 {
+          animation: text-one 8s linear infinite;
+        }
+        &.p-2 {
+          animation: text-one 8s linear infinite;
+          animation-delay: 2.7s;
+        }
+        &.p-3 {
+          animation: text-one 8s linear infinite;
+          animation-delay: 5.4s;
+        }
+      }
+    }
+    &.cl-2 {
+      margin-top: 50px !important;
+      position: relative;
+      p {
+        position: absolute;
+        &.p-1 {
+          animation: text-two 8s linear infinite;
+        }
+        &.p-2 {
+          animation: text-two 8s linear infinite;
+          animation-delay: 2.7s;
+        }
+        &.p-3 {
+          animation: text-two 8s linear infinite;
+          animation-delay: 5.4s;
+        }
+      }
+    }
+    p {
+      font-family: "Audiowide";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 45px;
+      text-transform: uppercase;
+      color: #ffffff !important;
+    }
+  }
+}
+
+// ANIMATION
+@keyframes text-one {
+  0% {
+    left: -300px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes text-two {
+  0% {
+    right: -300px;
+  }
+  100% {
+    right: 100%;
+  }
+}
+
+// Responsive
+// Tablet
+@media screen and(min-width: 480px) and (max-width: 850px) {
+  .logoholder{
+    .col-12{
+      p{
+        font-size: 25px !important;
+      }
+    }
+  }
+}
+
+// Mobile
+@media screen and(min-width: 300px) and (max-width: 479.9px) {
+  .logoholder{
+    .col-12{
+      p{
+        font-size: 18px !important;
+      }
+    }
+  }
+}

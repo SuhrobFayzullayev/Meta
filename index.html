@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./sass/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>MetaRL</title>
+  </head>
+
+  <body>
+    <div class="container-xl">
+      <!-- HEADER -->
+      <div class="row header">
+        <div class="col-2 logo">
+          <p>
+            <a href="#">Meta</a>
+          </p>
+          <sup>
+            <a href="#">RL</a>
+          </sup>
+        </div>
+        <div class="col-10" id="bigRespMenu">
+          <ul class="ul-1" id="respMenu1">
+            <li>
+              <a href="#collection"> Wave NFTs </a>
+            </li>
+            <li>
+              <a href="#story"> Stories </a>
+            </li>
+            <li>
+              <a href="#contact"> Contact </a>
+            </li>
+          </ul>
+          <ul class="ul-2" id="respMenu2">
+            <li>
+              <a href="">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa-brands fa-discord"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa-brands fa-telegram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-2 res-btn-div">
+          <button class="res-btn show" id="respBtn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- MAIN -->
+      <div class="row main">
+        <div class="col-4">
+          <div class="row rw-1">
+            <p>META RECORD LABEl</p>
+          </div>
+          <div class="row rw-2">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique.
+            </p>
+          </div>
+          <div class="row rw-3">
+            <button type="button">Learn more</button>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/slide-img-1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/slide-img-2.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/slide-img-3.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination" id="collection"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLLECTION -->
+      <div class="row collection">
+        <div class="col-4">
+          <div class="row rw-1">
+            <p class="p-1">wave NFT</p>
+            <p class="p-2">COLLECTION of 777</p>
+          </div>
+          <div class="row rw-2">
+            <img src="./images/slide-img-1.png" alt="" />
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="row rw-1">
+            <span>
+              <p>
+                META WAVE NFT is your pass to Meta Record Label ecosystem. It is
+                your access to our industry experts, established artists, and
+                partners.
+              </p>
+            </span>
+          </div>
+          <div class="row rw-2">
+            <p class="p-1">
+              Hac habitasse platea dictumst vestibulum rhoncus est. Sit amet
+              dictum sit amet justo. Tortor aliquam nulla facilisi cras.
+            </p>
+            <p class="p-2">
+              Maecenas ultricies mi eget mauris pharetra. Sit amet consectetur
+              adipiscing elit ut aliquam purus. Porta nibh venenatis cras sed
+              felis. Aenean vel elit scelerisque mauris pellentesque pulvinar.
+              Et malesuada fames ac turpis egestas sed tempus. Enim sit amet
+              venenatis urna cursus eget.
+            </p>
+            <p class="p-3">
+              Maecenas ultricies mi eget mauris pharetra et ultrices. A
+              condimentum vitae sapien pellentesque habitant morbi.
+            </p>
+          </div>
+          <div class="row rw-3">
+            <button>Get one on OpenSea</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ARTISTS -->
+      <div class="row artists">
+        <div class="col-12 cl-1">
+          <p class="p-1">Artists</p>
+          <p class="p-2">Artists</p>
+          <p class="p-3">Artists</p>
+        </div>
+        <div class="col-12 cl-2" id="bigBox">
+          <div class="col-3">
+            <div class="row rw-1">
+              <img src="./images/person-1.png" alt="" />
+            </div>
+            <div class="row rw-2">
+              <p>Mark Popson</p>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="row rw-1">
+              <img src="./images/person-2.png" alt="" />
+            </div>
+            <div class="row rw-2">
+              <p>Pete Bentz</p>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="row rw-1">
+              <img src="./images/person-3.png" alt="" />
+            </div>
+            <div class="row rw-2">
+              <p>Daniela Youth</p>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="row rw-1">
+              <img src="./images/person-4.png" alt="" />
+            </div>
+            <div class="row rw-2">
+              <p>Roman Gore</p>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="row rw-1">
+              <img src="./images/person-5.png" alt="" />
+            </div>
+            <div class="row rw-2">
+              <p>Tonya</p>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="row rw-1">
+              <img src="./images/person-6.png" alt="" />
+            </div>
+            <div class="row rw-2">
+              <p>Ivor</p>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="row rw-1">
+              <img src="./images/person-7.png" alt="" />
+            </div>
+            <div class="row rw-2">
+              <p>Somae Petit</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STORY -->
+      <div class="row story" id="story">
+        <p class="title">MRL.<span>the story.</span></p>
+        <div class="box box-1">
+          <div class="col-6">
+            <div class="row rw-1">
+              <p class="p-1">Our founders</p>
+            </div>
+            <div class="row">
+              <p>Partners</p>
+            </div>
+            <div class="row">
+              <p>The future</p>
+            </div>
+          </div>
+          <div class="col-6 cl-2">
+            <img src="./images/img-1.jpg" alt="" />
+          </div>
+        </div>
+        <div class="box box-2">
+          <div class="row rw-1">
+            <p class="p-1">
+              META record label was founded by Shaky Lake and Baky Hike in 2020
+              business accelerator.
+            </p>
+          </div>
+          <div class="row">
+            <p>
+              META record label was founded by Shaky Lake and Baky Hike in 2020
+              business accelerator.
+            </p>
+          </div>
+          <div class="row">
+            <p>
+              Maecenas ultricies mi eget mauris pharetra. Sit amet consectetur
+              adipiscing elit ut aliquam purus. Porta nibh venenatis cras sed
+              felis. Aenean vel elit scelerisque mauris pellentesque pulvinar.
+              Et malesuada fames ac turpis egestas sed tempus. Enim sit amet
+              venenatis urna cursus eget.
+            </p>
+          </div>
+          <div class="row">
+            <p>
+              Maecenas ultricies mi eget mauris pharetra et ultrices. A
+              condimentum vitae sapien pellentesque habitant morbi.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row img">
+        <img src="./images/img-2.png" alt="" />
+      </div>
+
+      <!-- ROADMAP -->
+      <div class="row roadmap">
+        <div class="title">
+          <p>Roadmap</p>
+        </div>
+        <div class="col-12 cl-1">
+          <div class="circle crl-1">
+            <div class="first circle-child">
+              <div class="second circle-child">
+                <div class="third circle-child">
+                  <div class="fourth circle-child"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="circle crl-2">
+            <div class="first circle-child">
+              <div class="second circle-child">
+                <div class="third circle-child">
+                  <div class="fourth circle-child"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="circle crl-3">
+            <div class="first circle-child">
+              <div class="second circle-child">
+                <div class="third circle-child">
+                  <div class="fourth circle-child"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 cl-2">
+          <div class="card">
+            <div class="card-header">
+              <div class="col-2">1</div>
+              <div class="col-10">
+                <p class="p-1">Phase 1 - completed</p>
+                <p class="p-2">Spring 2022 - pre launch</p>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="col-8">
+                <div class="text-1">
+                  <p class="p-1">Website 1.2</p>
+                  <p class="p-2">Discord community promotion</p>
+                  <p class="p-3">MINTING WAVE NFTs</p>
+                </div>
+                <div class="text-2">
+                  <p>
+                    WAVE NFTs will be 100% pre-minted and launched as an
+                    OpenOcean collection
+                  </p>
+                </div>
+              </div>
+              <div class="col-4">
+                <img src="./images/slide-img-2.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <div
+                class="col-2"
+                style="
+                  background-color: transparent;
+                  border: 1px solid #8dfd1b;
+                  color: #8dfd1b;
+                "
+              >
+                2
+              </div>
+              <div class="col-10">
+                <p class="p-1">Phase 2</p>
+                <p class="p-2">Summer 2022 - GROWTH</p>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="col-8">
+                <div class="text-1">
+                  <p class="p-1">Hiring for 10 positions in</p>
+                  <p class="p-2">Partnerships with main Metaverse players</p>
+                  <p class="p-3">
+                    Partnerships with WEB 2.0 music destribution channels
+                  </p>
+                </div>
+                <div class="text-2">
+                  <p>Onboarding 100 new artists</p>
+                  <p>
+                    META Record Labels is holding the first screening of
+                    aspiring artists from the list of WAVE NFT holders
+                  </p>
+                </div>
+              </div>
+              <div class="col-4">
+                <img src="./images/slide-img-1.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <div
+                class="col-2"
+                style="
+                  background-color: transparent;
+                  color: #8dfd1b;
+                  border: 1px solid #8dfd1b;
+                "
+              >
+                3
+              </div>
+              <div class="col-10">
+                <p class="p-1">Phase 3</p>
+                <p class="p-2">Summer 2022 - YOuR new stage</p>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="col-8">
+                <div class="text-1">
+                  <p class="p-1">Onboarding new partners</p>
+                  <p class="p-2">First live concert in Sandjar</p>
+                  <p class="p-3">Live concert in Decentrafield</p>
+                </div>
+                <div class="text-2">
+                  <p>
+                    We secured dates for out artists to peform in front of the
+                    live audience of Metaverse. Check the concert schedule in
+                    our
+                  </p>
+                </div>
+              </div>
+              <div class="col-4">
+                <img src="./images/slide-img-3.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LOGOHOLDER -->
+      <div class="logoholder row">
+        <div class="col-12 cl-1">
+          <p class="p-1">LOGOHOLDER</p>
+          <p class="p-2">LOGOHOLDER</p>
+          <p class="p-3">LOGOHOLDER</p>
+        </div>
+        <div class="col-12 cl-2">
+          <p class="p-1">LOGOHOLDER</p>
+          <p class="p-2">LOGOHOLDER</p>
+          <p class="p-3">LOGOHOLDER</p>
+        </div>
+      </div>
+
+      <!-- QUESTIONS -->
+      <div class="row questions">
+        <div class="col-5 cl-1">
+          <div class="row text">
+            <p class="p-1">Frequently</p>
+            <p class="p-2">asked</p>
+            <p class="p-3">questions</p>
+          </div>
+          <div class="row img">
+            <img src="./images/slide-img-2.png" alt="" />
+          </div>
+        </div>
+        <div class="col-6 cl-2">
+          <div class="row rw-1">
+            <div class="col-11">
+              <p>How can I get into Meta RL?</p>
+            </div>
+            <div class="col-1">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault"> </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique. Duis
+                cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                commodo diam libero vitae erat. Aenean faucibus nibh et justo
+                cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus
+                tristique posuere.
+              </p>
+            </div>
+          </div>
+          <div class="row rw-1">
+            <div class="col-11">
+              <p>When is the NFT launch?</p>
+            </div>
+            <div class="col-1">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault"> </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique. Duis
+                cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                commodo diam libero vitae erat. Aenean faucibus nibh et justo
+                cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus
+                tristique posuere.
+              </p>
+            </div>
+          </div>
+          <div class="row rw-1">
+            <div class="col-11">
+              <p>Where can I get a WAVE NFT?</p>
+            </div>
+            <div class="col-1">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault"> </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique. Duis
+                cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                commodo diam libero vitae erat. Aenean faucibus nibh et justo
+                cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus
+                tristique posuere.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TEAM -->
+      <div class="row team">
+        <div class="col-12">
+          <p class="p-1">TEAM</p>
+          <p class="p-2">TEAM</p>
+          <p class="p-3">TEAM</p>
+        </div>
+        <div class="col-4">
+          <img src="./images/person-8.jpg" alt="" />
+          <h4>Shaky Lake</h4>
+          <h6>Founder</h6>
+          <a href="#">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros elementum tristique.
+          </p>
+        </div>
+        <div class="col-4">
+          <img src="./images/person-9.jpg" alt="" />
+          <h4>Baky Hike</h4>
+          <h6>Co-founder</h6>
+          <a href="#">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros elementum tristique.
+          </p>
+        </div>
+        <div class="col-4">
+          <img src="./images/person-10.jpg" alt="" />
+          <h4>Vania Do</h4>
+          <h6>Producer</h6>
+          <a href="#">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros elementum tristique.
+          </p>
+        </div>
+      </div>
+
+      <!-- JOIN THE DISCORD -->
+      <div class="row discord">
+        <div class="col-5">
+          <div class="row rw-1">
+            <p class="p-1">JOIN OUR</p>
+            <p class="p-2">DISCORD</p>
+          </div>
+          <div class="row rw-2">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique.
+            </p>
+          </div>
+          <div class="row rw-3">
+            <button type="button">
+              <i class="fa-brands fa-discord"></i>
+              Join Discord
+            </button>
+          </div>
+        </div>
+        <div class="col-6">
+          <img src="./images/slide-img-3.png" alt="" />
+        </div>
+      </div>
+
+      <div class="row footer" id="contact">
+        <div class="box">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="col-2 logo">
+                <p>
+                  <a href="#">Meta</a>
+                </p>
+                <sup>
+                  <a href="#">RL</a>
+                </sup>
+              </div>
+            </li>
+            <li class="list-group-item li-1">2022 All rights reserved</li>
+          </ul>
+        </div>
+        <div class="box">
+          <ul class="list-group">
+            <li class="list-group-item">Wave NFTs</li>
+            <li class="list-group-item">Stories</li>
+            <li class="list-group-item">Contact</li>
+          </ul>
+        </div>
+        <div class="box">
+          <ul class="list-group">
+            <li class="list-group-item">Licencing</li>
+            <li class="list-group-item">Style Guide</li>
+            <li class="list-group-item">Changelog</li>
+          </ul>
+        </div>
+        <div class="box">
+          <ul class="list-group">
+            <li class="list-group-item">Powered by Webflow</li>
+            <li class="list-group-item">Developed by Anastasiia G.</li>
+          </ul>
+        </div>
+        <div class="box">
+          <ul class="ul-2 icons">
+            <li>
+              <a href="">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa-brands fa-discord"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa-brands fa-telegram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

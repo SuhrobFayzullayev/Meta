@@ -1,0 +1,227 @@
+@import "./global.scss";
+
+.container-xl {
+  background-color: black;
+  .collection {
+    margin-top: 60px !important;
+    height: 700px;
+    background-color: rgb(0, 0, 0);
+    .col-4 {
+      padding: 0 20px !important;
+      .row {
+        width: 100%;
+        &.rw-1 {
+          height: 100px;
+          padding: 0 20px !important;
+          p {
+            margin: 0 !important;
+            font-family: "Audiowide";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 28px;
+            text-transform: uppercase;
+            color: white;
+            &.p-2 {
+              margin-top: -12px !important;
+              opacity: 0.7;
+            }
+          }
+        }
+        &.rw-2 {
+          margin-top: 60px !important;
+          height: 65%;
+          img {
+            width: 100%;
+            height: 100%;
+            transition: all 0.4s ease-in-out;
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+    .col-8 {
+      padding-left: 80px !important;
+      .row {
+        width: 85%;
+        &.rw-1 {
+          min-height: 100px;
+          max-height: 200px;
+          span {
+            height: fit-content;
+            border-left: 4px solid $colorSuccess;
+            p {
+              margin-left: 20px !important;
+              font-family: "DM Mono";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 21px;
+              color: $colorSuccess;
+              line-height: 32px;
+            }
+          }
+        }
+        &.rw-2 {
+          margin-top: 20px !important;
+          min-height: 300px;
+          max-height: 400px;
+          p {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 26px;
+            color: white;
+            &.p-1 {
+              margin-left: -5px !important;
+            }
+            &.p-2 {
+              margin-left: -10px !important;
+            }
+            &.p-3 {
+              margin-left: -15px !important;
+            }
+          }
+        }
+        &.rw-3 {
+          height: 50px;
+          button {
+            padding-bottom: 10px !important;
+            width: 220px;
+            margin: 25px 0 !important;
+            height: 40px;
+            border: 2px solid $colorSuccess;
+            background-color: transparent;
+            font-family: "DM Mono";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 16px;
+            text-align: center;
+            text-transform: capitalize;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+// RESPONSIVE
+
+// MOBILE
+@media screen and(min-width: 300px) and (max-width: 479.9px) {
+  .container-xl {
+    .collection{
+        height: fit-content;
+        padding: 30px 0 !important;
+        @include flex(center, center);
+        flex-wrap: wrap;
+        .col-4{
+            height: 30%;
+            width: 100%;
+            @include flex(flex-start, center);
+            flex-wrap: wrap;
+            .rw-1{
+                width: 100%;
+                p{
+                    font-size: 23px !important;
+                }
+            }
+            .rw-2{
+                min-width: 200px;
+                max-width: 350px;
+                height: 300px !important;
+                img{
+                    margin-top: -30px !important;
+                }
+            }
+        }
+        .col-8{
+            width: 100% !important;
+            @include flex(flex-end, center);
+            flex-wrap: wrap;
+            padding: 0 10px !important;
+            .row{
+                width: 90%;
+                &.rw-1{
+                    margin-left: 10% !important;
+                    span{
+                        p{
+                            line-height: 20px !important;
+                            font-size: 10px !important;
+                        }
+                    }
+                }
+                &.rw-2{
+                    margin-top: -10px !important;
+                    p{
+                        font-size: 10px !important;
+                        &.p-1{
+                            margin-left: -10% !important;
+                        }
+                        &.p-3{
+                            margin-top: -10px !important;
+                            margin-left: -13% !important;
+                        }
+                    }
+                }
+                &.rw-3{
+                    margin-top: -20px !important;
+                    button{
+                        padding-bottom: 5px !important;
+                        width: 120px ;
+                        height: 25px;
+                        font-size: 8px !important;
+                    }
+                }
+            }
+        }
+    }
+  }
+}
+
+// TABLET
+@media screen and(min-width: 480px) and (max-width: 850px) {
+  .container-xl {
+    .collection{
+        margin-top: -20px !important;
+        height: fit-content;
+        padding: 30px 0 !important;
+        @include flex(center, center);
+        flex-wrap: wrap;
+        .col-4{
+            height: 30%;
+            width: 100%;
+            @include flex(center, center);
+            .rw-1{
+                p{
+                    font-size: 23px !important;
+                }
+            }
+            .rw-2{
+                height: 300px !important;
+            }
+        }
+        .col-8{
+            height: 70%;
+            margin-top: 50px !important;
+            width: 100%;
+            .rw-1{
+                p{
+                    font-size: 18px !important;
+                }
+            }
+            .rw-2{
+                p{
+                    font-size: 13px !important;
+                }
+            }
+            .rw-3{
+                margin-bottom: 20px !important;
+            }
+        }
+    }
+  }
+}

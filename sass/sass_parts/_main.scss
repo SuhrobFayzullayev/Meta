@@ -1,0 +1,184 @@
+@import "./global.scss";
+
+.container-xl {
+  margin: auto !important;
+  .main {
+    background-color: black;
+    height: 400px;
+    .col-4 {
+      padding: 30px 0 !important;
+      @include flex(center, center);
+      flex-wrap: wrap;
+      .row {
+        width: 90%;
+        &.rw-1 {
+          p {
+            font-family: "Audiowide";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 45px;
+            text-transform: uppercase;
+            color: white;
+          }
+        }
+        &.rw-2 {
+          p {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 26px;
+            color: white;
+          }
+        }
+        &.rw-3 {
+          margin: 15px 0 !important;
+          button {
+            background-color: $colorSuccess;
+            border: none;
+            width: 150px;
+            height: 40px;
+            font-family: "DM Mono";
+            padding-bottom: 10px !important;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+    .col-8 {
+      .mySwiper {
+        width: 100%;
+        height: 100%;
+        .swiper-wrapper {
+          width: 100%;
+          height: 100%;
+          .swiper-slide {
+            margin-top: 10px !important;
+            width: 300px;
+            height: 350px;
+            outline: none !important;
+            img {
+              width: 100%;
+              height: 100%;
+              filter: saturate(2);
+            }
+          }
+        }
+        .swiper-navBtn {
+          top: 40%;
+          font-size: 2px !important;
+          color: rgb(255, 255, 255);
+          &::after{
+            font-size: 25px;
+          }
+        }
+        .swiper-pagination-bullet {
+          opacity: 1;
+          background: rgb(255, 255, 255);
+        }
+      }
+    }
+  }
+}
+
+// RESPONSIVE
+
+// MOBILE
+@media screen and(min-width: 300px) and (max-width: 479.9px){
+  .container-xl{
+    .main{
+      @include flex(flex-start, center);
+      flex-wrap:  wrap !important;
+      height: 750px;
+      .col-4{
+        // margin-left: 50px !important;
+        width: 80%;
+        .rw-1{
+          p{
+            font-size: 25px !important;
+            line-height: 35px !important;
+          }
+        }
+        .rw-2{
+          margin: 20px 0 !important;
+        }
+        .rw-3{
+          button{
+            height: 35px !important;
+            width: 100px !important;
+            font-size: 14px !important;
+          }
+        }
+      }
+      .col-8{
+        width: 100%;
+        padding: 0 20px !important;
+        .mySwiper {
+          width: 100%;
+          height: 100%;
+          .swiper-wrapper {
+            width: 100%;
+            height: 100%;
+            .swiper-slide {
+              margin-top: 10px !important;
+              height: 350px;
+              img {
+                width: 100%;
+                height: 100%;
+                filter: saturate(2);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+} 
+
+// TABLET
+@media screen and(min-width: 480px) and (max-width: 850px) {
+  .container-xl{
+    .main{
+      @include flex(flex-start, center);
+      flex-wrap:  wrap !important;
+      height: 700px;
+      .col-4{
+        margin-left: 50px !important;
+        width: 70%;
+        .rw-1{
+          p{
+            line-height: 45px !important;
+          }
+        }
+        .rw-3{
+          button{
+            width: 130px !important;
+          }
+        }
+      }
+      .col-8{
+        width: 100%;
+        .mySwiper {
+          width: 100%;
+          height: 100%;
+          .swiper-wrapper {
+            width: 100%;
+            height: 100%;
+            .swiper-slide {
+              margin-top: 10px !important;
+              // width: 300px;
+              height: 350px;
+              outline: none !important;
+              img {
+                width: 100%;
+                height: 100%;
+                filter: saturate(2);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

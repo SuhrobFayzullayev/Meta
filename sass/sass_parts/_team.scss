@@ -1,0 +1,148 @@
+@import "./global.scss";
+
+.team {
+  margin-top: 50px !important;
+  overflow: hidden;
+  .col-12 {
+    padding: 0 !important;
+    margin: 30px 0px !important;
+    position: relative;
+    height: 100px;
+    @include flex(space-between, center !important);
+    p {
+      top: 0;
+      left: 0;
+      padding: 0 !important;
+      position: absolute;
+      font-family: "Audiowide";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 79px;
+      line-height: 88px;
+      text-transform: uppercase;
+      color: #ffffff;
+      &.p-1 {
+        animation: text 8s linear infinite;
+      }
+      &.p-2 {
+        animation: text 8s linear infinite;
+        animation-delay: 2.7s;
+      }
+      &.p-3 {
+        animation: text 8s linear infinite;
+        animation-delay: 5.4s;
+      }
+    }
+  }
+  .col-4 {
+    padding: 20px 40px !important;
+    @include flex(center, center);
+    flex-wrap: wrap;
+    img {
+      width: 100%;
+      margin-bottom: 10px !important;
+    }
+    h4,
+    h6,
+    p {
+      margin: 5px !important;
+      text-align: center;
+      width: 100%;
+    }
+    h4 {
+      font-family: "DM Mono";
+      font-size: 21px;
+      color: white;
+    }
+    h6 {
+      font-family: "DM Mono";
+      color: $colorSuccess;
+    }
+    p {
+      font-size: 14px;
+      color: white;
+    }
+    a {
+      margin: 10px !important;
+      width: 30px;
+      height: 30px;
+      background-color: white;
+      @include flex(center, center);
+
+      i {
+        color: black;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@keyframes text {
+  0% {
+    left: -300px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+
+// RESPONSIVE
+// Mini Tablet
+@media screen and(min-width: 630px) and (max-width: 750px) {
+  .team{
+    @include flex(space-between, center);
+    .col-12{
+      p{
+        font-size: 60px!important;
+      }
+    }
+    .col-4{
+     width: 50%;
+    }
+  }
+}
+
+// Tablet
+@media screen and(min-width: 480px) and (max-width: 629.9px) {
+  .team{
+    @include flex(space-between, center);
+    .col-12{
+      p{
+        font-size: 50px!important;
+      }
+    }
+    .col-4{
+     width: 50%;
+     h4{
+      font-size: 18px !important;
+     }
+     h6{
+      font-size: 13px !important ;
+     }
+     p{
+      font-size: 10px !important;
+     }
+     a{
+      width: 20px;
+      height: 20px;
+     }
+    }
+  }
+}
+
+// Mobile
+@media screen and(min-width: 300px) and (max-width: 479.9px) {
+  .team{
+    @include flex(space-between, center);
+    .col-12{
+      p{
+        font-size: 45px !important;
+      }
+    }
+    .col-4{
+      margin: 20px auto !important;
+     width: 380px !important;
+    }
+  }
+}

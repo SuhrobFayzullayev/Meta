@@ -1,0 +1,136 @@
+@import "./global";
+
+.questions {
+  margin-top: 100px !important;
+  padding: 20px 50px !important;
+  .col-5 {
+    .text {
+      p {
+        text-transform: uppercase;
+        font-family: "Audiowide";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 25px;
+        color: white;
+        padding-left: 0 !important;
+        &.p-2 {
+          margin-top: 10px !important;
+          color: $colorDarkGray;
+        }
+      }
+    }
+    .img {
+      img {
+        width: 360px !important;
+        height: 360px !important;
+      }
+    }
+  }
+  .col-6 {
+    margin-left: 40px !important;
+    background-color: $colorDimGray;
+    height: fit-content;
+    .row {
+      padding: 15px !important;
+      .col-11 {
+        p {
+          font-family: "DM Mono";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: #ffffff;
+        }
+      }
+      .col-12 {
+        margin-top: 10px !important;
+        p {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 19px;
+          color: $colorDarkGray;
+        }
+      }
+    }
+  }
+}
+
+// Responsive 
+// Mini Laptop
+@media screen and(min-width: 630px) and (max-width: 850px) {
+  .questions{
+    flex-wrap: wrap;
+    .col-5{
+      width: 100%;
+      @include flex(space-arround, center);
+      .text{
+        margin-right: 20px !important;
+        width: 50%;
+        p{
+          font-size: 34px !important;
+        }
+      }
+      .img{
+        width: 50%;
+        img{
+          width: 300px !important;
+        }
+      }
+    }
+    .col-6{
+      width: 90%;
+      margin: 30px auto !important;
+      // padding: 0 !important;
+    }
+  }
+}
+
+// Tablet
+@media screen and(min-width: 450px) and (max-width: 629.9px) {
+  .questions{
+    flex-wrap: wrap;
+    .col-5{
+      width: 100%;
+    }
+    .col-6{
+      width: 100%;
+      margin: 30px auto !important;
+    }
+  }
+}
+
+// Mobile
+@media screen and(min-width: 300px) and (max-width: 449.9px) {
+  .questions{
+    flex-wrap: wrap;
+    padding: 20px !important;
+    .col-5{
+      width: 100%;
+      .text{
+        p{
+          font-size: 28px !important;
+          line-height: 15px !important;
+        }
+      }
+    }
+    .col-6{
+      margin: 0 !important;
+      width: 100%;
+      .row{
+        .col-11{
+          width: 85%;
+          p{
+            font-size: 14px !important;
+          }
+        }
+        .col-1{
+          margin-top: 5px !important;
+          margin-left: 10px !important;
+        }
+      }
+    }
+  }
+}

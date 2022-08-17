@@ -1,0 +1,168 @@
+@import "./global.scss";
+
+.container-xl {
+  .header {
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    height: 80px;
+    padding: 0 30px !important;
+    .logo {
+      width: 15%;
+      height: 100%;
+      @include flex(center, center);
+      p {
+        font-size: 30px;
+        font-family: "Audiowide";
+      }
+      sup {
+        font-size: 10px;
+        font-family: "Audiowide";
+      }
+    }
+    .col-10 {
+      margin-left: 10px !important;
+      @include flex(space-between, center);
+      ul {
+        height: 100%;
+        &.ul-1 {
+          width: 35%;
+          @include flex(space-between, center);
+          li {
+            font-size: 15px;
+            font-weight: 600;
+          }
+        }
+        &.ul-2 {
+          width: 30%;
+          @include flex(space-around, center);
+          li {
+            a {
+              border-radius: 3px;
+              background-color: white;
+              @include flex(center, center);
+              width: 25px;
+              height: 25px;
+              color: black !important;
+            }
+          }
+        }
+      }
+    }
+    .res-btn-div {
+      display: none;
+    }
+  }
+}
+
+// RESPONSIVE
+
+// MOBILE
+@media screen and(min-width: 300px) and (max-width: 479.9px) {
+  .container-xl {
+    .header {
+      height: 60px !important;
+      @include flex(space-between, center);
+      .logo {
+        p {
+          font-size: 20px !important;
+        }
+      }
+      .col-10 {
+        background-color: $colorDimGray;
+        position: absolute;
+        top: 100%;
+        left: -10px;
+        border: 1px solid;
+        width: 100vw;
+        height: 100vh;
+        flex-wrap: wrap !important;
+        display: none;
+        ul {
+          width: 100% !important;
+          flex-wrap: wrap !important;
+          &.ul-1 {
+            height: 30%;
+            li {
+              width: 100% !important;
+              text-align: center;
+            }
+          }
+          &.ul-2 {
+            height: 50%;
+            li {
+              margin-top: -100px !important;
+              width: 100% !important;
+              height: 5% !important;
+              @include flex(center !important, center);
+              a {
+                color: black !important;
+              }
+            }
+          }
+        }
+      }
+      .res-btn-div {
+        display: block;
+        @include flex(flex-end, center);
+        button {
+          border: none;
+          background-color: transparent;
+          color: white !important;
+        }
+      }
+    }
+  }
+}
+
+// TABLET
+@media screen and(min-width: 480px) and (max-width: 850px) {
+  .container-xl {
+    .header {
+      height: 70px !important;
+      @include flex(space-between, center);
+      .logo {
+        p {
+          font-size: 25px !important;
+        }
+      }
+      .col-10 {
+        width: 77.5% !important;
+        @include flex(flex-end, center);
+        ul {
+          &.ul-1 {
+            background-color: $colorDimGray;
+            position: absolute;
+            top: 100%;
+            right: 0px;
+            border: 1px solid;
+            width: 70vw;
+            height: 100vh;
+            @include flex(center, center);
+            flex-wrap: wrap;
+            display: none;
+            li {
+              margin-top: -100px !important;
+              text-align: center !important;
+              width: 100%;
+            }
+          }
+          &.ul-2 {
+            width: 180px !important;
+          }
+        }
+      }
+      .res-btn-div {
+        width: 2.5% !important;
+        display: block;
+        @include flex(center, center);
+        button {
+          border: navajowhite;
+          background-color: transparent;
+          color: white !important;
+        }
+      }
+    }
+  }
+}

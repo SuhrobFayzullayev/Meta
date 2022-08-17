@@ -1,0 +1,100 @@
+@import "./global.scss";
+
+.footer {
+  margin-top: 80px !important;
+  padding: 50px !important;
+  background-color: $colorBlueviolet;
+  @include flex(space-between, flex-start);
+  .box {
+    width: 20% !important;
+    ul {
+      padding: 5px !important;
+      li {
+        cursor: pointer;
+        width: 80%;
+        color: white;
+        background-color: transparent;
+        border: none;
+        margin: 10px 0 !important;
+        font-family: "DM Mono";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        &.li-1 {
+          font-size: 10px;
+        }
+        .logo {
+          margin-left: 29px !important;
+          @include flex(center, center);
+          p {
+            font-size: 25px;
+            font-family: "Audiowide";
+          }
+          sup {
+            font-size: 8px;
+            font-family: "Audiowide";
+          }
+        }
+      }
+    }
+    .icons {
+      display: flex;
+      li {
+        width: 25px !important;
+        height: 25px !important;
+        background-color: white;
+        margin: 10px !important;
+        padding: 10px !important;
+        @include flex(center, center);
+        a {
+          i {
+            margin-top: 2px !important;
+            color: black;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(min-width: 300px) and (max-width: 479.9px) {
+  .footer {
+    padding: 20px !important;
+    flex-wrap: wrap;
+    .box {
+      margin: 0 5px !important;
+      width: 45% !important;
+      ul {
+        li {
+          font-size: 11px !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(min-width: 480px) and (max-width: 629.9px) {
+  .footer {
+    padding: 20px !important;
+    flex-wrap: wrap;
+    @include flex(flex-start, flex-start);
+
+    .box {
+      width: 30% !important;
+    }
+  }
+}
+
+@media screen and(min-width: 630px) and (max-width: 850px) {
+  .footer {
+    padding: 20px !important;
+    flex-wrap: wrap;
+    @include flex(flex-start, flex-start);
+
+    .box {
+      width: 23% !important;
+    }
+  }
+}

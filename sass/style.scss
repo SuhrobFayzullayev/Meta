@@ -1,0 +1,21 @@
+@import "./sass_parts/header", "./sass_parts/main", "./sass_parts/collection",
+  "./sass_parts/artists", "./sass_parts/story", "./sass_parts/roadmap",
+  "./sass_parts/logoholder", "./sass_parts/questions", "./sass_parts/team", "./sass_parts/joinTheDiscord",
+  "./sass_parts/footer";
+
+// FONTS
+@font-face {
+  font-family: "Audiowide";
+  src: url("../fonts/Audiowide-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+  font-family: "DM Mono";
+  src: url("../fonts/DMMono-Regular.ttf");
+}
+

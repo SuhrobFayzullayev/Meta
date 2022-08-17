@@ -1,0 +1,23 @@
+//  MIXINS
+@mixin flex($jc, $ai) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+// VARIABLES
+$colorSuccess: rgba(141, 253, 27, 1);
+$colorWhireSmoke: rgba(255, 255, 255, 1);
+$colorDarkGray: rgba(168, 168, 168, 1);
+$colorBlueviolet: rgba(66, 0, 106, 1);
+$colorDimGray: rgba(34, 34, 34, 1);
+
+* {
+  text-decoration: none !important;
+  list-style-type: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  a {
+    color: rgb(255, 255, 255) !important;
+  }
+}
